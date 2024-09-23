@@ -7,6 +7,10 @@
 html {
   font-size: 62.5%;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
@@ -53,7 +57,7 @@ a {
   background-color: #e6f0ff;
   padding-top: 26px;
   top: -26px;
-  z-index: 10;
+  z-index: 100;
 }
 
 .navbar {
@@ -97,12 +101,10 @@ a {
   display: flex;
   flex-direction: column;
 
+  justify-content: center;
   background-color: #e6f0ff;
   position: relative;
   height: calc(100vh - 90px);
-}
-.hero {
-  margin-top: 130px;
 }
 .info {
   width: 51%;
